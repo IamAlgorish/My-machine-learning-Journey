@@ -4,6 +4,6 @@ exmaple consider Student dictionary
 for sallow copy we can do
 new_Student = Student.copy()
  to get key elements -> Student.keys()
-and for value -> Student.value()
+and for value -> Student.values()
 
 
