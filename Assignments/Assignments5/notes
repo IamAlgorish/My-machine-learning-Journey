@@ -3,4 +3,7 @@ wo copy dictonary me jo ki add new location generate krega copy krne me na ki ol
 exmaple consider Student dictionary 
 for sallow copy we can do
 new_Student = Student.copy()
+ to get key elements -> Student.keys()
+and for value -> Student.value()
+
 
