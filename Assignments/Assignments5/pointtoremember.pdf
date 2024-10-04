@@ -1,0 +1,2 @@
+.copy()= used for shallow copy
+wo copy dictonary me jo ki add new location generate krega copy krne me na ki older location me copy krega
