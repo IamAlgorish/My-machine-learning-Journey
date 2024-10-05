@@ -6,4 +6,11 @@ new_Student = Student.copy()
  to get key elements -> Student.keys()
 and for value -> Student.values()
 
+for formatting the the key values payer
+###  Student.item()-> key value pairs dega
+for key,value in Student.items():
+          print(f"{key}:{value}")
+
+
+
 
