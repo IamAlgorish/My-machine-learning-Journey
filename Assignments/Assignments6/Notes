@@ -1,2 +1,5 @@
 *args => all the arguments that was given there (positional arguments)
 **kwargs => all the arguments in the key value pair (keyword arguments).
+we can also return multiple parameters from the fucntion.
+example :-  def multiply(a,b):
+                return a*b,a
