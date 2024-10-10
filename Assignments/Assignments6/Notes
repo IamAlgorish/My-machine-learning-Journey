@@ -1,2 +1,2 @@
-*args => all the arguments that was given there
-**kwargs => all the arguments in the key value pair.
+*args => all the arguments that was given there (positional arguments)
+**kwargs => all the arguments in the key value pair (keyword arguments).
