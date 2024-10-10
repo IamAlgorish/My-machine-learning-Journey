@@ -1,0 +1,2 @@
+*args => all the arguments that was given there
+**kwargs => all the arguments in the key value pair.
