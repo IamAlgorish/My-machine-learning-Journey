@@ -1,10 +1,7 @@
 def shout(text): 
     return text.upper() 
-
 print(shout('Hello')) 
-
 yell = shout 
-
 print(yell('Hello')) 
 
 Explanation:=> In the above example, we have assigned the function shout to a variable. 
