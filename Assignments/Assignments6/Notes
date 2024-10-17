@@ -1,3 +1,18 @@
+def shout(text): 
+    return text.upper() 
+
+print(shout('Hello')) 
+
+yell = shout 
+
+print(yell('Hello')) 
+
+Explanation:=> In the above example, we have assigned the function shout to a variable. 
+                This will not call the function instead it takes the function object referenced by a shout
+                and creates a second name pointing to it, yell.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 *args => all the arguments that was given there (positional arguments)
 bohot sare number krne hain use funtion me then we can use this 
 For example := 
