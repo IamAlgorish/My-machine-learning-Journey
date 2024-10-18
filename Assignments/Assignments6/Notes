@@ -7,6 +7,23 @@ print(yell('Hello'))
 Explanation:=> In the above example, we have assigned the function shout to a variable. 
                 This will not call the function instead it takes the function object referenced by a shout
                 and creates a second name pointing to it, yell.
+================================================================
+================================================================
+# When you decorate a function with @timer_decorator, Python automatically applies the
+# timer_decorator function to complex_calculation. This means the original complex_calculation
+# function is wrapped inside the wrapper function created by timer_decorator.
+import time
+def time_decorator(fun):
+    def innertime(*args , **kwargs):
+        start = time.time()
+        fun(*args,**kwargs)
+        end = time.time()
+        print("Total time taken",fun.__name__,end-start)
+    return innertime
+@time_decorator
+def funtime(num):
+    return sum(x**2 for x in range(num))
+funtime(10000)
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
