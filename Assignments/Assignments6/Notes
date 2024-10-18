@@ -29,7 +29,9 @@ def time_decorator(fun):
 def funtime(num):
     return sum(x**2 for x in range(num))
 funtime(10000)
-
+=====================================================
+Refrence:- https://www.geeksforgeeks.org/decorators-in-python/
+=====================================================
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 *args => all the arguments that was given there (positional arguments)
