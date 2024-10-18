@@ -1,0 +1,7 @@
+//library
+
+import numpy as np
+here np is allice we don't have to write numpy again and again we can call with np.array([1,2,3,4,5])
+
+__init__.py => khud ka custom  pakage bana ho toh ye file hona jaruriri h iss name ka wether it is empty or not with that we can treat whole folder as a package
+and call the module in to it.
