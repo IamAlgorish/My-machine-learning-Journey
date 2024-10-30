@@ -5,3 +5,82 @@ here np is allice we don't have to write numpy again and again we can call with 
 
 __init__.py => khud ka custom  pakage bana ho toh ye file hona jaruriri h iss name ka wether it is empty or not with that we can treat whole folder as a package
 and call the module in to it.
+
+
+
+
+
+========================================================================================================
+Standard Library Most Commonly Used:
+========================================================================================================
+==> import array
+      arr = array.array(i,[1,2,3,4,5])
+
+==> import maths
+       math.sqrt()
+
+==> import array
+      arr = array.array(i,[1,2,3,4,5])
+
+==> import random
+      random.randint(1,10)  
+      random.choice(['apple','banana','kella'])
+
+###File and directry access
+==> import os 
+       print(os.getcwd)           cwd-> current working directory
+       ox.mkdir('test_dir') ->  directory/ folder  banane ke liye 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+To perform high level operation in files and collection of files
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+==> import shutil
+      shutil.copyfile()
+            ex:- shutil.copyfile('source.txt','destination.txt')
+
+==> import json
+      arr = array.array(i,[1,2,3,4,5])
+      jassu = json.dumps(arr)
+       print(jassu)
+       parsed_data = json.loads(jassu)
+
+
+==> import csv
+      with open('example.csv',mode='w',newline='') as file:
+       writer = csv.writer(file)
+        writer.writeraw(['name','age'])
+         writer.writeraw(['kira','45'])
+          with open('example.csv',mode='r') as file:
+          reader = csv.reader(file)
+          for raw in reader:
+                print(raw)
+          
+
+
+
+
+
+
+==> import datetime import datetime,timedelta
+      now = datetime.now()
+      print(now)
+      yesterday = now-timedelta(days=1)
+      print(yesterday)
+
+
+==> import time
+     print(time.time())
+    time.sleep(2) 
+     print(time.time())
+
+
+
+
+
+==> ###Regular expresion
+import re
+pattern = r'\d+'       ### digits dhundegga
+text = 'There are 123 apples'
+match = re.search(pattern,text)
+print(match.group())
