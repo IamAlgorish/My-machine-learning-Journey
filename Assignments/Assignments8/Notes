@@ -46,12 +46,32 @@ and characters.
 |            WORKING FILES WITH PATH                       |                   
 ============================================================
 import os
+os.getcwd() // to get the currenct workking directory
 new_directory = "package"
 os.mkdir(new_directory)
 os.listdir('.')
+os.path.join(dir1 , dir2) // to join the of the directory
 
 
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Checking if a path is exist or not
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|path = 'example.txt' |
+|os.path.exists(path) |
+-----------------------
+### checking if a path is a file or Directory
+import os
+path = 'example.txt'
+os.path.isfile(path) || check whether file is file or not
+os.path.isdir()
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+### Getting the absolute path 
+ relative_path = 'example.txt'
+absolute_path = os.path.abspath(relative_path)
+print(absolute_path)
 
-
+give all the path along with it
+another method is do to use join method as done  by os.path.join()
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
