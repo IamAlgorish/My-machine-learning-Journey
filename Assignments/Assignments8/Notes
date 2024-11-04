@@ -1,0 +1,57 @@
+File Operation- Read And Write Files
+
+File handling is a crucial part of any programming language. Python provides built-in functions 
+and methods to read from and write files and binary files.
+============================================
+|with open('example.txt','r') as file:      |
+|        content = file.read()              |
+|        print(content)                     |
+============================================
+
+if open in write mode 
+then used 'w' mode
+file.write("Hello world \n ")
+
+### write a file without overwriting
+then have to used 'a' mode   (which means append mode)
+File.Write("Hello ")
+
+### Binary Files 
+#writing to a binary file
+============================================
+data = b'\x00\x01\x02\x03\x04'
+with open('example.bin', 'wb') as file:
+file.write(data)
+============================================
+rb for read binary
+content = file.read()
+print(content)
+============================================
+              | W+ MODE |
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The 'w+' mode in Python is used to open a file for both
+reading and writing. If the file does not exist, it will 
+be created. If the file exists, its content is truncated 
+(i.e., the file is overwritten).
+file.seek(0)-> ye krna padega curser ko 0 pe lane ke liye
+tab print krega line ko ye.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Q.  Read a text file and count the no. of lines, words,
+and characters.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+============================================================
+|            WORKING FILES WITH PATH                       |                   
+============================================================
+import os
+new_directory = "package"
+os.mkdir(new_directory)
+os.listdir('.')
+
+
+
+
+
+
