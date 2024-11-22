@@ -42,7 +42,7 @@ except ZeroDivisionError as ex:
 Try ,Except, Else Block
 ===================================================
 try:
-    num = int(input("Enter the num")0)
+    num = int(input("Enter the num"))
     result = 10/num
 except ZeroDivisionError
         print("You can't divide it by zero")
