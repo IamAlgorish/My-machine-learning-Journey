@@ -1,0 +1,81 @@
+### Understand Exceptions
+Exception handling in Python allows you to handle errors gracefully and take corrective
+actions without stopping the program's execution. This lesson will cover the basics of exceptions,
+including how to use except, else, and finally blocks.
+
+### What are Exceptions?
+Exceptions are events that disrupt the normal flow of a program. They occur when an error is 
+encountered during program execution. common exception include:
+* ZeroDivisionError: Dividing by zero.
+* FileNotFoundError: File not found.
+* ValueError: Invalid value.
+
+##Exception try, except block 
+====================================================
+try:
+   a = b
+except:
+    print("The variable has not been assigned")
+====================================================
+without this the error shows by it 
+in a = b
+cell In[4], line 1
+----> 1 a = b
+NameError: name 'b' is not defined
+===================================================
+other way to handle this 
+as the error we can see is name error 
+so make it expect name as NameError and make it alias
+===================================================
+try: 
+    a = b
+except NameError as ex:
+    print(ex)
+---------------------------------------------------
+### ZeroDivsionError
+try:
+   result = 1/0
+except ZeroDivisionError as ex:
+      print(ex)
+      print("please enter the denominator greater than 0")
+===================================================
+Try ,Except, Else Block
+===================================================
+try:
+    num = int(input("Enter the num")0)
+    result = 10/num
+except ZeroDivisionError
+        print("You can't divide it by zero")
+except ValueError:
+        print("That's not a valid number!")
+except Exception as ex:
+        print(ex)
+else:
+     print(f"The result is {result}"
+finally:
+     print("Execution Complete")
+---------------------------------------------------
+else part is executed only if there is no error
+finally, block always got executed
+---------------------------------------------------
+
+### FileNotFoundError
+try:
+    File = open('example.txt','r'):
+           content = File.read()
+           a = b
+           print(content)
+except FileNotFoundError:
+       print("File not found")
+except Exception as ex:
+       print(ex)
+finally:
+      if 'File' in locals() or not File.closed():
+          File.close()
+          print('file close')
+
+
+
+
+
+
