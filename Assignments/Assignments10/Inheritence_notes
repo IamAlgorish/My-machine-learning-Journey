@@ -1,0 +1,40 @@
+class car:
+        def __init__(self, windows , doors,enginetype):
+               self.windows = windows
+               self.enginetype = enginetype
+               self.door = door
+
+         
+class Tesla(car):
+        def__init__ (self,windows,doors,enginetype,is_selfdriving):
+               super().__init__(windows,doors,eninetype)
+               self.is_selfdriving = is_selfdriving
+        def selfdriving(self):
+                       print(f"tesla self drives or not{self.is_selfdriving}")
+         
+#Test
+car1 = tesla(2,4,'devil',true)
+
+### multiple inheritence 
+when clas inherit more than one base class
+#base class1
+class Animal:
+      def __init__(self,name):
+          self.name = name
+      def speak(self):
+          print("sublass must impliment this method")
+#base class 2
+class Pet:
+        def __init__(self,owner):
+            self.owner = owner
+#Derived class
+class Dog(Animal,Pet):
+     def __init__(self,name , owner):
+           Pet.__init__(self,owner)
+           Animal.__init__(self,name)
+      def speak(self):
+             print("wooof")
+
+              
+   
+          
