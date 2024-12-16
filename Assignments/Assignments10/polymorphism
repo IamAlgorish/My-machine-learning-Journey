@@ -1,0 +1,8 @@
+Polymorophism is a core concept in Object-Oriented Programming(OOP) that allows objects of different classes
+to be treated as objects of a common superclass. It provides a way to perform a sigle action in different forms.
+Polymorphism is typically achieved through method overriding and interfaces.
+
+### Method  overriding allows a child class to provide a specific implementation of a method that is already
+defined in its parent class.
+
+
