@@ -48,3 +48,7 @@ print("Average books sold in first five days:", sum(hardcover_sales[:5])/5)
 You can actually use Python to quickly turn this string into a list with .split().
 In the parentheses, we need to provide the character should be used to mark the end of one list item and the beginning of another,
 and enclose it in quotation marks. In this case, that character is a comma.
+================================
+flowers = "pink primrose,hard-leaved pocket orchid,canterbury bells,sweet pea,english marigold,tiger lily,moon orchid,bird of paradise,monkshood,globe thistle"
+================================
+ print(flowers.split(","))
