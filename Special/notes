@@ -2,3 +2,44 @@ When you multiple an integer or float by a boolean with value True, it just retu
 If you multiply an integer or float by a boolean with value False, it always returns 0. This is true for both positive and negative numbers.
 If you multiply a string by a boolean with value True, it just returns that same string. And if you multiply a string by a boolean with value False,
 it returns an empty string (or a string with length zero).
+
+
+##List
+Slicing
+You can also pull a segment of a list (for instance, the first three entries or the last two entries). 
+This is called slicing. For instance:
+to pull the first x entries, you use [:x], and
+to pull the last y entries, you use [-y:].
+
+flowers_list = ["pink primrose", "hard-leaved pocket orchid", "canterbury bells", "sweet pea", 
+"english marigold", "tiger lily", "moon orchid", "bird of paradise", "monkshood", "globe thistle"]
+
+print("First three entries:", flowers_list[:3])
+print("Final two entries:", flowers_list[-2:])
+O/p
+First three entries: ['pink primrose', 'hard-leaved pocket orchid', 'canterbury bells']
+Final two entries: ['monkshood', 'globe thistle']
+flowers_list.remove("globe thistle")
+
+dding items¶
+Add an item to a list with .append(), and put the item you would like to add in parentheses.
+
+flowers_list.append("snapdragon")
+print(flowers_list)
+
+=======================
+hardcover_sales = [139, 128, 172, 139, 191, 168, 170]
+
+You can also get the minimum with min() and the maximum with max().
+
+print("Minimum:", min(hardcover_sales))
+print("Maximum:", max(hardcover_sales))
+====================================================
+To add every item in the list, use sum().
+
+print("Total books sold in one week:", sum(hardcover_sales))
+
+We can also do similar calculations with slices of the list. In the next code cell, 
+we take the sum from the first five days (sum(hardcover_sales[:5])), and then divide by five to get the average number of books sold in the first five days.
+
+print("Average books sold in first five days:", sum(hardcover_sales[:5])/5)
