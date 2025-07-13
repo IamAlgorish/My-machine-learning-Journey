@@ -1,0 +1,16 @@
+import pandas as pd
+Creating data
+There are two core objects in pandas: the DataFrame and the Series.
+
+DataFrame
+A DataFrame is a table. It contains an array of individual entries, each of which has a certain value. Each entry corresponds to a row (or record) and a column.
+
+For example, consider the following simple DataFrame:
+
+pd.DataFrame({'Yes': [50, 21], 'No': [131, 2]})
+  Yes	No
+0	50	131
+1	21	2
+
+==========================
+In this example, the "0, No" entry has the value of 131. The "0, Yes" entry has a value of 50, and so on.
